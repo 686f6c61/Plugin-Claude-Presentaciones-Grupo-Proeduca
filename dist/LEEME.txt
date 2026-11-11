@@ -1,0 +1,74 @@
+PROEDUCA Presentaciones
+=======================
+
+Skill para Claude que crea presentaciones con las plantillas oficiales de
+UNIR y de UNIPRO y las entrega en PowerPoint (.pptx), PDF y HTML.
+
+Este archivo es para la persona que instala la skill. Claude no lo necesita:
+sus instrucciones están en SKILL.md.
+
+
+Cómo subirla a claude.ai
+------------------------
+
+1. No descomprimir el zip. Se sube tal cual: presentacion-proeduca.zip.
+2. Entrar en claude.ai y abrir Personalizar > Skills.
+3. Comprobar que está activada la ejecución de código y creación de archivos.
+   Sin ella la skill no puede generar nada.
+4. Subir el zip y dejar la skill activada.
+5. Si estaba subida la skill anterior, presentacion-unipro, quitarla para que
+   no compitan las dos.
+
+Para actualizarla, quitar la versión antigua y subir el zip nuevo.
+
+
+Cómo se usa
+-----------
+
+En una conversación nueva, pedir la presentación diciendo la institución:
+
+    Hazme una presentación de UNIR sobre el tema 3 de la asignatura, para
+    una clase de 20 minutos. Te adjunto los apuntes.
+
+    Prepara las diapositivas de mi defensa de TFM con la plantilla de UNIPRO.
+
+Si no se dice la institución, Claude la pregunta antes de empezar.
+
+Conviene adjuntar el material de partida (apuntes, memoria, datos). Claude no
+inventa cifras ni referencias: lo que falte, lo pide.
+
+
+Qué entrega
+-----------
+
+- El .pptx editable, con gráficos y tablas nativos.
+- Una copia en PDF y otra en HTML para verla y compartirla sin PowerPoint.
+- Cuando se usan fuentes, la cita APA al pie de cada diapositiva y la lista
+  de referencias al final.
+
+
+Qué hay que saber
+-----------------
+
+- UNIPRO usa en portada y separadores la fuente Proeduca Sans Light, que no
+  va incrustada en el archivo. En un equipo que no la tenga instalada,
+  PowerPoint la sustituye por otra. UNIR va entera en Arial.
+- El PDF y el HTML los dibuja LibreOffice. Si el entorno donde se ejecuta
+  Claude no lo tiene, se entrega solo el .pptx y Claude lo dice.
+- La plantilla fija logotipo, colores, tipografías y posiciones. No se pueden
+  cambiar desde la conversación.
+
+
+Otras formas de instalarla
+--------------------------
+
+- Claude Cowork: subir proeduca-presentaciones.plugin desde el gestor de
+  plugins de la aplicación.
+- Claude Code: descomprimir proeduca-presentaciones.plugin (es un zip) en
+  una carpeta y arrancar con: claude --plugin-dir RUTA_DE_LA_CARPETA
+
+
+Créditos
+--------
+
+Creado por 686f6c61.dev (https://686f6c61.dev).

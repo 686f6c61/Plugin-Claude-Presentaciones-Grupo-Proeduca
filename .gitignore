@@ -1,0 +1,10 @@
+# El repositorio publica solo los paquetes listos para instalar y su
+# documentación. El código fuente y las herramientas no se suben.
+/*
+!/.gitignore
+!/README.md
+!/dist/
+
+__pycache__/
+*.pyc
+.venv/
