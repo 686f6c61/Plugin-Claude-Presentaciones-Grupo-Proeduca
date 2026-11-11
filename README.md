@@ -26,6 +26,44 @@ Preparar una clase, una defensa de TFG o TFM o un informe en diapositivas suele 
 | **Números en español** | Coma decimal y los mismos decimales en los valores que se comparan. |
 | **Datos reales** | Claude no inventa cifras ni referencias: lo que falta, lo pide. |
 
+## Cómo trabaja cada parte
+
+### Guion
+
+Antes de generar nada, Claude escribe el guion y lo critica: cada título tiene que afirmar algo, cada diapositiva lleva una sola idea y el tipo elegido tiene que corresponder a la forma del contenido (una comparación va en columnas, una evolución en un gráfico, unas fases en una cronología). En presentaciones largas te lo enseña para que lo corrijas antes de maquetar.
+
+### Figuras
+
+- Los diagramas y esquemas se dibujan en SVG y se convierten a PNG para insertarlos en la diapositiva, con su pie.
+- Solo usan la paleta de la institución. El conversor rechaza la figura si encuentra un color ajeno, así que no puede colarse un azul que no sea el corporativo ni los colores de la otra institución.
+- Cada institución trae cuatro figuras modelo con sus colores (proceso, ciclo, jerarquía y matriz), que sirven de punto de partida.
+- Una figura es para esquemas. Los datos numéricos van siempre en un gráfico o en una tabla, y un esquema conceptual lo dice en su pie.
+
+### Gráficos y tablas
+
+- Son objetos nativos de PowerPoint: se pueden abrir, cambiar los datos y cambiar el formato.
+- Los gráficos se hacen con datos reales, los tuyos o un cálculo sobre ellos. No se dibujan barras ni nubes de puntos con valores puestos para ilustrar.
+- El eje arranca en cero y lleva su título. Las series usan los colores de la institución.
+- Las tablas admiten fila de total y quedan centradas en el espacio de la diapositiva.
+
+### Citas y referencias
+
+- Cada diapositiva que toma datos, ideas, figuras o citas textuales de una obra lleva al pie la cita breve en formato APA, «Autor (año)».
+- Los gráficos, tablas y figuras propios llevan su nota de fuente, por ejemplo «Elaboración propia a partir de datos del INE (2024)».
+- Al final, antes del cierre, se añade sola la diapositiva «Referencias» con todas las obras citadas, en APA 7, por orden alfabético y con sangría francesa. Si no caben en una, se reparten en varias.
+- Si a una referencia le faltan datos bibliográficos, Claude los pide; no los completa con suposiciones.
+
+### Comprobaciones antes de entregar
+
+- **Auditoría automática**: avisa de textos que se salen de su caja, invaden el pie o se montan sobre otra forma, de celdas de tabla que no caben, de restos de texto de ejemplo de la plantilla y de diapositivas de datos sin fuente.
+- **Revisión visual**: Claude genera una hoja con todas las diapositivas en miniatura, la mira y corrige lo que vea mal antes de dártela.
+
+### Formatos de entrega
+
+- **PowerPoint**: el original editable.
+- **PDF**: para enviar o imprimir.
+- **HTML**: un único archivo que se abre en cualquier navegador, con navegación por teclado, texto alternativo en las imágenes y las notas del orador.
+
 ## Instalación
 
 Descarga el archivo que corresponda de la carpeta [`dist/`](dist/).
